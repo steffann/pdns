@@ -1335,6 +1335,7 @@ The following actions exist.
 
   Associate a tag named ``name`` with a value of ``value`` to this query, that will be passed on to the response.
   Subsequent rules are processed after this action.
+  This function will not overwrite an existing tag. If the tag already exists it will keep its original value.
   Note that this function was called :func:`TagAction` before 1.6.0.
 
   :param string name: The name of the tag to set
@@ -1346,6 +1347,7 @@ The following actions exist.
 
   Associate a tag named ``name`` with a value of ``value`` to this response.
   Subsequent rules are processed after this action.
+  This function will not overwrite an existing tag. If the tag already exists it will keep its original value.
   Note that this function was called :func:`TagResponseAction` before 1.6.0.
 
   :param string name: The name of the tag to set
